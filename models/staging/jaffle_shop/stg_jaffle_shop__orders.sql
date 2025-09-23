@@ -4,4 +4,4 @@ select
     order_date,
     status
 
-from hive_metastore.dbt_chage.raw_orders
+from {{ source('hive_metastore', 'raw_orders') }}

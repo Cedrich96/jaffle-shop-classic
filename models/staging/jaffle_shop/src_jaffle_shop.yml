@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: hive_metastore
+    database: hive_metastore
+    schema: dbt_chage
+    tables:
+      - name: raw_customers
+      - name: raw_orders

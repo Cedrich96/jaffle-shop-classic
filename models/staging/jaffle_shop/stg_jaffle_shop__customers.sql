@@ -3,4 +3,4 @@ select
     first_name,
     last_name
 
-from hive_metastore.dbt_chage.raw_customers
+from {{ source('hive_metastore', 'raw_customers') }}
