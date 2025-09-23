@@ -2,22 +2,22 @@ models:
   - name: stg_jaffle_shop__customers
     columns:
       - name: customer_id
-        data_tests:
+        tests:
           - unique
           - not_null
-        
+
   - name: stg_jaffle_shop__orders
     columns:
       - name: order_id
-        data_tests:
+        tests:
           - unique
           - not_null
-        name: order_status
-          data_tests:
-           - accepted_values:
+      - name: order_status     # ✅ New item in the columns list
+        tests:                 # ✅ Use 'tests' not 'data_tests'
+          - accepted_values:
               values:
-               - completed
-               - shipped
-               - placed
-               - return_pending
-               - returned
+                - completed
+                - shipped
+                - placed
+                - return_pending
+                - returned
