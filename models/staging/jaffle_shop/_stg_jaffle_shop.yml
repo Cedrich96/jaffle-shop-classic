@@ -12,7 +12,7 @@ models:
         tests:
           - unique
           - not_null
-      - name: order_status     # ✅ New item in the columns list
+      - name: status     # ✅ New item in the columns list
         tests:                 # ✅ Use 'tests' not 'data_tests'
           - accepted_values:
               values:
