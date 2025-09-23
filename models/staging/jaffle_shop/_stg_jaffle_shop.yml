@@ -13,7 +13,8 @@ models:
           - unique
           - not_null
         name: order_status
-          - accepted_values:
+          data_tests:
+           - accepted_values:
               values:
                - completed
                - shipped
