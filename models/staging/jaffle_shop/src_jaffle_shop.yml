@@ -4,6 +4,21 @@ sources:
   - name: hive_metastore
     database: hive_metastore
     schema: default
+    description: A clone of a Postgres application database.
     tables:
       - name: raw_customers
+        description: Raw Customer Data
+        columns:
+          - name: id
+            description: Primary Key for customer data
+            data_tests:
+              - unique
+              - not_null
       - name: raw_orders
+        description: Raw Order data.
+        columns:
+          - name: id
+            description: Primary key for orders data
+            data_tests:
+              - unique
+              - not_null
