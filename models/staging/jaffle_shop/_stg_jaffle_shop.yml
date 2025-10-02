@@ -22,12 +22,13 @@ models:
         tests:
           - not_null
           - accepted_values:
-              values:
-                - completed
-                - shipped
-                - placed
-                - return_pending
-                - returned
+              arguments:
+                values:
+                  - completed
+                  - shipped
+                  - placed
+                  - return_pending
+                  - returned
 
       - name: order_date
         tests:
