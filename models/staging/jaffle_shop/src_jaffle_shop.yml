@@ -3,7 +3,7 @@ version: 2
 sources:
   - name: hive_metastore
     database: hive_metastore
-    schema: default
+    schema: dbt_sources
     description: A clone of a Postgres application database.
     tables:
       - name: raw_customers
