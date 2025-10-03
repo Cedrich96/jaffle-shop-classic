@@ -23,9 +23,13 @@ require-dbt-version: [">=1.0.0", "<2.0.0"]
 
 models:
   jaffle_shop:
+      +schema: null
       materialized: table
       staging:
         materialized: view
       marts:
       +materialized: table
+seeds: 
+  jaffle_shop:
+    +schema: dbt_sources
 
