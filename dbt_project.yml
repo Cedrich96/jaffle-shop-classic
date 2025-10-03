@@ -31,5 +31,5 @@ models:
       +materialized: table
 seeds: 
   jaffle_shop:
-    +schema: dbt_sources
+    +schema: src
 
