@@ -3,6 +3,6 @@ version: 2
 sources:
   - name: hive_metastore      
     database: hive_metastore 
-    schema: default         
+    schema: dbt_sources         
     tables:
       - name: raw_payments  
